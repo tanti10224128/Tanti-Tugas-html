@@ -1,0 +1,106 @@
+:root {
+    --bg-start: #1a1025;
+    --bg-end: #30203f;
+    --card-bg: #2b1d38;
+    --text-main: #fff0f6;
+    --text-muted: #d0b8d8;
+    --accent: #f472b6;
+    --accent-soft: #be185d;
+    --border: #593653;
+    --code-bg: #1a1025;
+    --code-text: #fce7f3;
+    --success: #86efac;
+    --shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(145deg, var(--bg-start), var(--bg-end));
+    margin: 0;
+    padding: 40px 0;
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+.main-header {
+    background: var(--card-bg);
+    text-align: center;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border-top: 5px solid var(--accent);
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    margin: 5px 0 10px;
+    color: var(--text-main);
+}
+
+.main-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 25px 30px 30px 30px;
+    margin-bottom: 35px;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin: 0 0 15px 38px;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin: 20px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card p {
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.card-header-icon {
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    font-size: 1.4rem;
+}
+
+.live-example-block {
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--bg-start);
+    color: var(--text-main);
+}
+
+li {
+    margin: 8px;
+}
